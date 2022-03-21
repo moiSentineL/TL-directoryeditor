@@ -4,8 +4,8 @@ import time
 from colorama import init, Fore
 from pyjavaproperties import Properties
 
-propertiesfiledir = r"JavaPortableLauncher\Data\AppData\.tlauncher\tlauncher-2.0.properties"
-minecraftdir = os.path.realpath(os.path.join(os.path.dirname(__file__), 'JavaPortableLauncher','Data', 'AppData', '.minecraft'))
+propertiesfiledir = os.path.realpath(os.path.join(os.path.dirname(__file__), '..', 'JavaPortableLauncher','Data', 'AppData', '.tlauncher', 'tlauncher-2.0.properties'))
+minecraftdir = os.path.realpath(os.path.join(os.path.dirname(__file__),'..', 'JavaPortableLauncher','Data', 'AppData', '.minecraft'))
 rawmcdir = repr(minecraftdir).replace("'", "")
 
 init(convert=True)
@@ -40,6 +40,7 @@ def existence():
                     
                     print("\nDirectory changed")
                     print("Edited directory: ", rawmcdir)
+                    os.system('pause')
                 else:
                     print(Fore.RED +"Something's Wrong")
                     os.system('pause')
@@ -54,7 +55,6 @@ def existence():
         os.system('pause')
 
 print('\nChecking if tlauncher-2.0.properties file exists or not...')
-
 existence()
 
     
