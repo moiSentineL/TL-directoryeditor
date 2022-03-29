@@ -20,13 +20,13 @@ Open the folder and run `tl-directoryeditor.exe`. You **MUST** run the file from
 ```
 📦 Root Folder
  ┣ 📂tl-directoryeditor
- ┣    ┣ 📜tl-directoryeditor.exe  <-------- You run this.
+ ┣    ┗ 📜tl-directoryeditor.exe  <-------- You run this.
  ┣ 📂JavaPortableLauncher
- ┣    ┣ 📂Data
- ┣       ┣ 📂AppData
+ ┣    ┗ 📂Data
+ ┣       ┗ 📂AppData
  ┣          ┣ 📂.minecraft
- ┣          ┣ 📂.tlauncher
- ┣             ┣ 📜tlauncher-2.0.properties  <-------- The file which is going to be edited.
+ ┣          ┗ 📂.tlauncher
+ ┣             ┗ 📜tlauncher-2.0.properties  <-------- The file which is going to be edited.
  ┣ 📂CommonFiles
  ┗ 📜tlauncher.jar  <-------- Make sure this file exists in the root directory.
 ```
