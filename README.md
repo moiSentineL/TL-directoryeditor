@@ -17,18 +17,19 @@ Open the folder and run `tl-directoryeditor.exe`. You **MUST** run the file from
 
 **Correct Directory Example:**
 
-    Root Folder
-    |
-    |- tlauncher.jar
-    |- tl-directoryeditor
-    |  |- tl-directoryeditor.exe
-    |- JavaPortableLauncher
-    |  |- Data
-    |     |- AppData
-    |	  	 |- .minecraft
-    |		 |- .tlauncher
-    |- CommonFiles
-
+```
+📦 Root Folder
+ ┣ 📂tl-directoryeditor
+ ┣    ┗ 📜tl-directoryeditor.exe  <-------- You run this.
+ ┣ 📂JavaPortableLauncher
+ ┣    ┗ 📂Data
+ ┣       ┗ 📂AppData
+ ┣          ┣ 📂.minecraft
+ ┣          ┗ 📂.tlauncher
+ ┣             ┗ 📜tlauncher-2.0.properties  <-------- The file which is going to be edited.
+ ┣ 📂CommonFiles
+ ┗ 📜tlauncher.jar  <-------- Make sure this file exists in the root directory.
+```
  
 
 ## Currently works only for [Portable Minecraft](https://www.reddit.com/r/TLAUNCHER/comments/tjc9r6/tlauncher_on_usb_final/)
