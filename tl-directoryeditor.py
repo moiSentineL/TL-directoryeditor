@@ -15,6 +15,13 @@ print("----moiSentineL----")
 
 time.sleep(1)
 
+def countdown():
+    count = 3
+    while count > 0:
+        print(Fore.YELLOW + "Exiting in",str(count) + "...", end="\r")
+        time.sleep(1)
+        count = count - 1
+
 def propertieseditor():
     p = Properties()
     p.load(open(propertiesfiledir))
@@ -40,19 +47,27 @@ def existence():
                     
                     print("\nDirectory changed")
                     print("Edited directory: ", rawmcdir)
-                    os.system('pause')
+                    countdown()
                 else:
-                    print(Fore.RED +"Something's Wrong")
-                    os.system('pause')
+                    print("\n.minecraft folder not found.")
+                    time.sleep(0.5)
+                    print("Creating folder...")
+                    os.mkdir(minecraftdir)
+
+                    time.sleep(2)
+
+                    print("\nFolder created")
+                    print("Edited directory: ", rawmcdir)
+                    countdown()
             except:
                 print(Fore.RED + "Something's Wrong")
-                os.system('pause')
+                countdown()
         else:
             print(Fore.RED + "Something's Wrong")
-            os.system('pause')
+            countdown()
     except:
         print(Fore.RED + "Something's Wrong")
-        os.system('pause')
+        countdown()
 
 print('\nChecking if tlauncher-2.0.properties file exists or not...')
 existence()
