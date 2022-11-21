@@ -63,7 +63,9 @@ def existence():
                 print(Fore.RED + "Something's Wrong")
                 countdown()
         else:
-            print(Fore.RED + "Something's Wrong")
+            print("\nProperies file not found.")
+            time.sleep(0.5)
+            print("Folder will be automatically created.")
             countdown()
     except:
         print(Fore.RED + "Something's Wrong")
