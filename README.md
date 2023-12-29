@@ -1,6 +1,6 @@
 # TLauncher Directory Editor
 
- The .properties Directory Editor for Portable TLauncher made by moiSentineL [here](https://www.reddit.com/r/TLAUNCHER/comments/tjc9r6/tlauncher_on_usb_final/).
+ The .properties Directory Editor for Portable TLauncher made by moiSentineL [here](https://github.com/moiSentineL/portabletl).
  
  This application written in [Python](https://www.python.org) will solve the problem of TLauncher not recognizing the current directory as the main `.minecraft` folder.
  
